@@ -1,0 +1,35 @@
+.main-page__container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.main-page__header {
+  font-size: 2.6vmin;
+  font-weight: 500;
+  line-height: 3vmin;
+}
+
+.main-page__left-side {
+  height: 100%;
+  padding: 2.7% 3.2%;
+  width: 80%;
+}
+
+.main-page__right-side {
+  height: 100%;
+  padding: 4.8vh 1.7vw;
+  width: 20%;
+  border-left: 1px solid #A5A5A5;
+}
+
+.main-page__left-side-control-panel {
+  height: 75vh;
+  padding-bottom: 3.4%;
+  padding-top: 4.2%;
+  width: 100%;
+}
+
+.main-page__left-side-control-panel:last-child {
+  margin-bottom: 0;
+}

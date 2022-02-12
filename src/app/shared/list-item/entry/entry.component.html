@@ -1,0 +1,5 @@
+<div [class]="{'entry__wrapper': true, 'entry__wrapper-vertical': orientation === 'vertical'}">
+  <div [class]="{'entry__category-name': true, 'entry__category-name-vertical': orientation === 'vertical'}">{{categoryName}}</div>
+
+  <div class="entry__category-value">{{(categoryValue || '&#8212;').split(',').join(', ')}}</div>
+</div>

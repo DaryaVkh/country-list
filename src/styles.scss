@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  border: none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clickable {
+  cursor: pointer;
+}

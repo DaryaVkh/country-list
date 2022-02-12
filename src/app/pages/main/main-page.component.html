@@ -1,0 +1,19 @@
+<div class="main-page__container">
+  <div class="main-page__left-side">
+    <h1 class="main-page__header">Countries</h1>
+    <div class="main-page__left-side-control-panel">
+      <ng-container *ngIf="mainPageState$ | async as mainPageState">
+        <app-list-item
+          *ngFor="let country of filteredCountries | slice:((+mainPageState.currentPage - 1) * 5):(+mainPageState.currentPage * 5) "
+          [country]="country"
+        ></app-list-item>
+      </ng-container>
+    </div>
+
+    <app-page-control-panel [countriesLength]="filteredCountries.length"></app-page-control-panel>
+  </div>
+
+  <div class="main-page__right-side">
+    <app-filter-sidebar></app-filter-sidebar>
+  </div>
+</div>

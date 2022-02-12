@@ -1,0 +1,13 @@
+<div class="page-control-panel__wrapper">
+  <ng-container *ngIf="mainPageState$ | async as mainPageState">
+    <button class="page-control-panel__prev-button" (click)="goToPrevPage()" [disabled]="mainPageState.currentPage === 1">
+      <app-prev-arrow [isDisabled]="mainPageState.currentPage === 1"></app-prev-arrow>
+    </button>
+
+    <div class="page-control-panel__current-page">{{mainPageState.currentPage}}</div>
+
+    <button class="page-control-panel__next-button" (click)="goToNextPage()" [disabled]="(countriesLength / 5) <= 1 || mainPageState.currentPage >= (countriesLength / 5)">
+      <app-next-arrow [isDisabled]="(countriesLength / 5) <= 1 || mainPageState.currentPage >= (countriesLength / 5)"></app-next-arrow>
+    </button>
+  </ng-container>
+</div>

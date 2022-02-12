@@ -1,0 +1,108 @@
+.filter-sidebar__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-sidebar__header {
+  font-size: 2.2vmin;
+  line-height: 3vmin;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 1.7vh;
+}
+
+.filter-sidebar__name-input {
+  width: 100%;
+  border-bottom: 1px solid #a5a5a5;
+  font-size: 1.5vmin;
+  line-height: 1.74vmin;
+  padding: 0 0 0.65vh;
+  margin-bottom: 3.8vh;
+}
+
+.filter-sidebar__name-input:focus {
+  border-bottom: 1px solid #347cff;
+  caret-color: #347cff;
+}
+
+.filter-sidebar__name-input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-sidebar__non-empty-name-input__label,
+.filter-sidebar__currency-chooser__label {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.3vmin;
+  line-height: 1.5vmin;
+  height: 1.5vmin;
+}
+
+.filter-sidebar__currency-chooser {
+  width: 100%;
+  font-size: 1.5vmin;
+  line-height: 1.74vmin;
+  padding: 0 0 0.65vh;
+  border-bottom: 1px solid #347cff;
+}
+
+.filter-sidebar__currency-chooser__options-container {
+  width: 100%;
+  height: 30vh;
+  overflow: auto;
+  background-color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 1.3vmin;
+  margin-bottom: 2.2vmin;
+}
+
+.last-option {
+  margin-bottom: 0 !important;
+}
+
+.filter-sidebar__currency-chooser__option,
+.filter-sidebar__continent-chooser__continent {
+  font-size: 1.5vmin;
+  margin-bottom: 2vmin;
+  height: 1.7vmin;
+  display: flex;
+  width: 100%;
+}
+
+.filter-sidebar__currency-chooser__checkbox {
+  width: 1.7vmin;
+  height: 1.7vmin;
+}
+
+.filter-sidebar__currency-chooser__checkbox__label {
+  align-self: center;
+  margin-left: 0.9vmin;
+}
+
+.filter-sidebar__continent-chooser__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filter-sidebar__continent-chooser__label {
+  font-size: 1.5vmin;
+  line-height: 1.74vmin;
+  font-weight: 700;
+  margin-bottom: 1.94vmin;
+}
+
+.filter-sidebar__continent-chooser__continent {
+  margin-bottom: 1.85vmin;
+}
+
+.filter-sidebar__continent-chooser__radio {
+  width: 1.85vmin;
+  height: 1.85vmin;
+}
+
+.filter-sidebar__continent-chooser__radio__label {
+  align-self: center;
+  margin-left: 2.4vmin;
+}

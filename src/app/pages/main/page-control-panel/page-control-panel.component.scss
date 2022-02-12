@@ -1,0 +1,26 @@
+.page-control-panel__wrapper {
+  display: flex;
+  font-size: 1.5vmin;
+  width: 6.2%;
+}
+
+.page-control-panel__prev-button,
+.page-control-panel__next-button {
+  align-items: center;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  width: 30%;
+}
+
+.page-control-panel__current-page {
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  width: 40%;
+}
+
+.page-control-panel__next-button {
+  justify-content: flex-end;
+}

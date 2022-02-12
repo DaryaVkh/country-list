@@ -1,0 +1,20 @@
+<small class="selector__currency-chooser__label">Валюта</small>
+<div class="selector__currency-chooser">Выбрано {{selectedCount}}</div>
+<div>
+    <div class="selector__currency-chooser__options-container">
+    <div
+        class="selector__currency-chooser__option"
+        *ngFor="let item of options; index as i"
+    >
+        <input
+            class="selector__currency-chooser__checkbox clickable"
+            type="checkbox"
+            [checked]="item.selected"
+            [id]="item.name"
+            (click)="onSelect($event)"
+            [attr.data-index]="i"
+        />
+        <label class="selector__currency-chooser__checkbox__label clickable" [for]="item.name">{{item.name}}</label>
+    </div>
+  </div>
+</div>

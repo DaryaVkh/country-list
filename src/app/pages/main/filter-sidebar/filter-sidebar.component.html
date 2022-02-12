@@ -1,0 +1,30 @@
+<div class="filter-sidebar__container">
+  <h2 class="filter-sidebar__header">Фильтры</h2>
+
+  <ng-container *ngIf="mainPageState$ | async as mainPageState">
+    <small
+      class="filter-sidebar__non-empty-name-input__label">{{nameFilterController.value !== '' ? 'Название' : ''}}</small>
+    <input class="filter-sidebar__name-input" type="text" placeholder="Название" [formControl]="nameFilterController"/>
+  </ng-container>
+
+  <app-selector
+    [options]="currencies$ | async"
+    (selectValue)="onSelect($event)"
+  ></app-selector>
+
+  <div class="filter-sidebar__continent-chooser__container">
+    <p class="filter-sidebar__continent-chooser__label">Континент</p>
+
+    <div class="filter-sidebar__continent-chooser__continent" *ngFor="let continent of continents">
+      <input
+        class="filter-sidebar__continent-chooser__radio"
+        type="radio"
+        name="continent"
+        [id]="continent"
+        [value]="continent"
+        [formControl]="continentFilterControl"
+      />
+      <label class="filter-sidebar__continent-chooser__radio__label" [for]="continent">{{continent}}</label>
+    </div>
+  </div>
+</div>

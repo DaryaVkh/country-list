@@ -1,0 +1,16 @@
+<div class="card-page__container">
+  <a class="card-page__back-link" [routerLink]="['/main']">
+    <back-icon></back-icon>
+    Вернуться
+  </a>
+
+  <h1 class="card-page__name">{{country.name}}</h1>
+
+  <div class="card-page_entries-container">
+    <app-entry class="card-page__entry" style="width: 60%;" categoryName="Континент" [categoryValue]="country.continent.name"></app-entry>
+    <app-entry class="card-page__entry" style="width: 40%;" categoryName="Валюта" [categoryValue]="country.currency"></app-entry>
+    <app-entry class="card-page__entry" style="width: 60%;" categoryName="Столица" [categoryValue]="country.capital"></app-entry>
+    <app-entry class="card-page__entry" style="width: 40%;" categoryName="Код" [categoryValue]="country.code"></app-entry>
+    <app-entry orientation="vertical" categoryName="Языки" [categoryValue]="languages"></app-entry>
+  </div>
+</div>

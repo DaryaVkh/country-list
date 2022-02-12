@@ -1,0 +1,25 @@
+.entry__wrapper {
+  display: flex;
+  font-size: 1.5vmin;
+  font-weight: 400;
+  line-height: 2.2vmin;
+  width: 100%;
+}
+
+.entry__wrapper-vertical {
+  flex-direction: column;
+}
+
+.entry__category-name {
+  color: rgba(0, 0, 0, .87);
+  width: 15%;
+  margin-right: 5.5vw;
+}
+
+.entry__category-name-vertical {
+  margin-bottom: 2vmin;
+}
+
+.entry__category-value {
+  color: #2962FF;
+}

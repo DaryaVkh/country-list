@@ -1,0 +1,16 @@
+<div class="list-item__container">
+  <div class="list-item__header-wrapper">
+    <h2 class="list-item__name">{{country.name}}</h2>
+
+    <div class="list-item__forward-icon-wrapper">
+      <a [routerLink]="['/country', country.code]">
+        <app-forward-icon></app-forward-icon>
+      </a>
+    </div>
+  </div>
+
+  <div class="list-item__entries-container">
+    <app-entry class="list-item__entry" categoryName="Континент" [categoryValue]="country.continent.name"></app-entry>
+    <app-entry class="list-item__entry" categoryName="Валюта" [categoryValue]="country.currency"></app-entry>
+  </div>
+</div>
