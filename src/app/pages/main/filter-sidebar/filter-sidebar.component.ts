@@ -29,7 +29,7 @@ export class FilterSidebarComponent implements OnInit, OnDestroy {
 
   nameFilterController = new FormControl('');
   continentFilterControl = new FormControl('');
-  continents: string[] = ['Asia', 'Africa', 'North America', 'South America', 'Antarctica', 'Europe', 'Oceania'];
+  continents = ['Asia', 'Africa', 'North America', 'South America', 'Antarctica', 'Europe', 'Oceania'];
 
   private destroy$ = new Subject<void>();
 

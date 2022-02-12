@@ -26,4 +26,4 @@ import { SelectorComponent } from './selector/selector.component';
     ReactiveFormsModule,
   ]
 })
-export class MainPageModule { }
+export class MainPageModule {}

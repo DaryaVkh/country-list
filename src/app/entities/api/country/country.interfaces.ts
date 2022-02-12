@@ -6,7 +6,7 @@ export interface IFilterInput {
 
 export interface IStringQueryOperatorInput {
   eq?: string;
-  glob?: String;
+  glob?: string;
   in?: string[];
   ne?: string;
   nin?: string[];

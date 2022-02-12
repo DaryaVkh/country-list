@@ -22,5 +22,4 @@ import {MainPageState} from './main-page/main-page.state';
     }),
   ],
 })
-export class StoreModule {
-}
+export class StoreModule {}

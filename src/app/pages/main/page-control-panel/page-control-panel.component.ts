@@ -13,6 +13,7 @@ import {IMainPageState} from '../../../store/main-page/main-page.model';
 })
 export class PageControlPanelComponent {
   @Select(MainPageState) mainPageState$: Observable<IMainPageState>;
+
   @Input() countriesLength: number;
 
   constructor(private store: Store) {}

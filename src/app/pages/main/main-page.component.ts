@@ -71,7 +71,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
   }
 
   private filterCountriesByContinent(countries: ICountryResponse[], continent: string): ICountryResponse[] {
-    if (continent === '') {
+    if (!continent) {
       return countries;
     }
     return countries.filter((country: ICountryResponse) => country.continent.name === continent);
