@@ -1778,13 +1778,12 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-apollo-angular@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/apollo-angular/-/apollo-angular-2.2.0.tgz#de6003ad6c0a785a11b026f31b78561479c07b96"
-  integrity sha512-/38ynj2gMJ1M/JlSDB6vv1fGYJy7WDukJn/3wQnoOYay5ZeU0rsAJdBaSZQiOPxqAJgVoGfU787/aXjIC1PWZg==
+apollo-angular@3.0.0-rc.0:
+  version "3.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/apollo-angular/-/apollo-angular-3.0.0-rc.0.tgz#466f8f8eb128a56a8eaee036928c64bb039e12b1"
+  integrity sha512-5/gsblJw6pMoKhTC6hoc+ibZxduSvwsJA8YKH6kSHPaa1qtPaxUVgIpPKCsMExS+lvM28evcTHLnjP89/CmiWg==
   dependencies:
-    extract-files "^9.0.0"
-    semver "^7.0.0"
+    extract-files "^11.0.0"
     tslib "^2.0.0"
 
 "aproba@^1.0.3 || ^2.0.0":
@@ -3009,10 +3008,10 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
-extract-files@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/extract-files/-/extract-files-9.0.0.tgz#8a7744f2437f81f5ed3250ed9f1550de902fe54a"
-  integrity sha512-CvdFfHkC95B4bBBk36hcEmvdR2awOdhhVUYH6S/zrVj3477zven/fJMYg7121h4T1xHZC+tetUpubpAhxwI7hQ==
+extract-files@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/extract-files/-/extract-files-11.0.0.tgz#b72d428712f787eef1f5193aff8ab5351ca8469a"
+  integrity sha512-FuoE1qtbJ4bBVvv94CC7s0oTnKUGvQs+Rjf1L2SJFfS+HTVVjhPFtehPdQ0JiGPqVNfSSZvL5yzHHQq2Z4WNhQ==
 
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
@@ -3270,10 +3269,10 @@ graphql-tag@^2.12.3:
   dependencies:
     tslib "^2.1.0"
 
-graphql@15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.0.0.tgz#042a5eb5e2506a2e2111ce41eb446a8e570b8be9"
-  integrity sha512-ZyVO1xIF9F+4cxfkdhOJINM+51B06Friuv4M66W7HzUOeFd+vNzUn4vtswYINPi6sysjf1M2Ri/rwZALqgwbaQ==
+graphql@15.8.0:
+  version "15.8.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.8.0.tgz#33410e96b012fa3bdb1091cc99a94769db212b38"
+  integrity sha512-5gghUc24tP9HRznNpV2+FIoq3xKkj5dTQqf4v0CpdPbFVwFkWoxOM+o+2OC9ZSvjEMTjfmG9QT+gcvggTwW1zw==
 
 handle-thing@^2.0.0:
   version "2.0.1"
